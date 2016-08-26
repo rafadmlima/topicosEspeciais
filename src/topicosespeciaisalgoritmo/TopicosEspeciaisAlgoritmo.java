@@ -28,11 +28,13 @@ public class TopicosEspeciaisAlgoritmo {
     public Double entropiaS(int pMais, int pMenos){
         
         
-        s = (pMais * Math.log(pMais)) - (pMenos * Math.log(pMenos));
+        s = ((-pMais) * Math.log(pMais) / Math.log(2)) + ((-pMenos) * Math.log(pMenos) / Math.log(2));
         
         
         return s;
     
     }
+    
+    
     
 }
